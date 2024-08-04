@@ -7,7 +7,7 @@ valorVariavel = 123;
 valorVariavel = [];
 valorVariavel = 'olá, mundo!';
 
-console.log(valorVariavel);
+// console.log(valorVariavel);
 
 
 //Exemplo 02 - Erro ao tentar atribuir um valor do tipo 'unknown1 a outros tipos
@@ -25,7 +25,8 @@ let algumaCoisaUnknown: unknown;
 
 console.log(algumaCoisaAny.toFixed());
 
+// console.log(algumaCoisaUnknown.toFixed()); //vai dá erro. já mostra erro em tempo de execução
 if (typeof algumaCoisaUnknown === 'number') {
-  console.log(algumaCoisaUnknown.toFixed()); //vai dá erro. já mostra erro em tempo de execução
+  console.log(algumaCoisaUnknown.toFixed()); 
   //Será obrigado a verificação de tipo para não dar ERRO
 }
